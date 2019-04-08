@@ -41,7 +41,7 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		addcust.custSubmitBtn();
 		Thread.sleep(3000);
 		boolean res= driver.getPageSource().contains("Customer Registered Successfully!!!");
-		
+		System.out.println("");
 		if(res==true)
 		{
 			Assert.assertTrue(true);
